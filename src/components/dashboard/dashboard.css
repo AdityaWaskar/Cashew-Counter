@@ -1,0 +1,150 @@
+#dashboardContainer{ 
+    display: flex;
+}
+ 
+
+#dashboardContainer .left{
+    width: 60%; 
+    padding: 20px;
+    flex-direction: column;
+
+} 
+
+#dashboardContainer .row{
+    justify-content: space-evenly;
+}
+#dashboardContainer .dashboard{
+    display: block;
+    /* background-color: black; */
+    width: 100%;
+    height: 60%;
+}
+
+#dashboardContainer .personalData{ 
+    height: 40%;
+    width: 100%;  
+}
+
+#dashboardContainer .workerProfile{  
+    border-radius: 4px;
+    border: 1px solid grey;
+    padding: 20px 30px;
+    width: 80%; 
+}
+
+#dashboardContainer .workerProfile .row{
+    justify-content: flex-start; 
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#dashboardContainer .workerProfile :is(label, div){ 
+    flex: 3;
+}
+#dashboardContainer .workerProfile span{ 
+   flex: 1;
+}
+
+#dashboardContainer .workerProfile .totalCahewBtwRange{
+    margin-bottom: 0px;
+}
+
+#dashboardContainer .totalCahewBtwRange label{
+    font-size: 1rem;
+}
+
+#dashboardContainer .right{
+    width: 40%;  
+    height: 100vh; 
+    padding: 0 20px;
+}
+
+#dashboardContainer .right .row{
+    width: 100%;
+    height: 10%;
+    align-items: end;
+    /* background-color: brown; */
+}
+
+#dashboardContainer .right .workerList{
+    height: 90%;
+}
+
+
+/* Worker table css */
+.wTable {
+    height: 90%; 
+    border: 1px solid grey;
+    border-radius: 8px; 
+    padding: 5%;
+    color: #4f4f4f;
+    background-color: #c4c4c44f;
+    width: 100%;
+}
+
+.scroll{
+    padding-top: 20px;
+    height: 95%;
+    overflow-y: scroll;
+    scroll-behavior: smooth; 
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.wTable .tr{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    padding-top: 3px;
+}
+
+.wTable .tr:hover{
+    cursor: pointer;
+    color: black;
+}
+
+.wTable .th{
+    margin-bottom: 10px;
+    border: none;
+    font-weight: bold;
+    padding: 0;
+}
+
+#dashboardContainer img{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.wTable .td:nth-child(1){ 
+    width: 10%;
+}
+.wTable .td:nth-child(2){ 
+    width: 60%;
+}
+.wTable .td:nth-child(3){ 
+    width: 30%;
+    text-align: center;
+}
+
+
+/* for Skeleton */
+.wTable .skeleton{ 
+    border-color: #d3d3d3;
+    padding: 25px 8px;
+}
+
+
+.wTable .skeleton .img{
+    width: 30px;
+    height: 30px;
+} 
+
+.wTable .skeleton :is(.name, .value){
+    width: 90%; 
+}

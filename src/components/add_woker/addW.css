@@ -1,0 +1,100 @@
+#addWorkerContainer{
+    flex-direction: column;
+    position: relative;
+}
+ 
+#addWorkerContainer .form{
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    width: 45%;
+    border: 2px solid #c5bfbf; 
+    padding-top: 15px;
+}
+
+#addWorkerContainer .title{
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center; 
+    padding-bottom: 30px;
+    border-bottom: 1px solid #c5bfbf;
+}
+
+#addWorkerContainer .subContainer{
+    padding: 30px 50px ;
+}
+
+#addWorkerContainer label{
+    /* display: block; */
+    margin-bottom: 10px;
+} 
+
+#addWorkerContainer .row{
+    display: flex;
+    gap: 3vw;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#addWorkerContainer #nameField{ 
+    width: 70%;
+}
+
+#addressField{
+    width: 100%;
+}
+
+#addWorkerContainer :is(input, textarea){
+    width: 100%;
+}
+
+#addWorkerContainer :is(input, textarea, select){
+    letter-spacing: 1.5px;
+    border: 1px solid #c5bfbf;
+    box-shadow: 0px 0px 2px grey;
+}
+
+#addWorkerContainer .form button{
+    --btn1 : #9E00FF;
+    width: 100%;
+    border: 1px solid var(--btn1);
+    color: var(--btn1);
+    background-color: #F9EAFA;
+    font-weight: bold;
+    font-size: 1.3rem;
+    transition: all .2s ease-in-out;
+    letter-spacing: 5px;
+}
+
+
+#addWorkerContainer .form button::before{
+    content: "";
+    background-color: #9E00FF;
+    width: 100%;
+}
+
+#addWorkerContainer .form button:hover{
+    background-color: #9E00FF;
+    color: white;
+}
+
+#genderField{
+    width: 30%;
+}
+select{
+    width: 100%;
+    text-align: center; 
+}
+
+.inputField span{
+    color: red;
+    font-size: .8rem; 
+}
+#age{
+    width: 30%;
+}
+
+#phoneNo{
+    width: 40%;
+} 

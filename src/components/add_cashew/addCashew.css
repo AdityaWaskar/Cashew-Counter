@@ -1,0 +1,59 @@
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
+
+/* css in remove_worker */
+#addCashewContainer .workerTable input{
+    border: 1px solid grey;
+    width: 50%;
+    text-align: center;
+}
+
+#addCashewContainer .workerTable button{
+    border: none;
+    background-color: transparent;
+    color: green; 
+    transition: all .4s ease-in-out;
+}
+
+#addCashewContainer .workerTable button:hover #rotateIcon {
+    animation: rotate 1s;
+}
+#addCashewContainer .workerTable button:hover {
+    border: 1px solid green;
+}
+
+@keyframes rotate {
+    0%{ transform: rotate(0deg); }
+    50%{ transform: rotate(360deg); }
+    100%{ transform: rotate(0deg); }
+}
+
+#addCashewContainer .workerTable .tr{
+    padding-bottom: 5px;
+}
+
+#addCashewContainer .dateFilter{
+    width: 80%;
+    /* background-color: red; */
+    margin: 0 auto;
+    text-align: right;
+    padding-bottom: 4vh;
+}
+
+#addCashewContainer .dateFilter input{
+    color: #595757;
+    border: 1px solid grey;
+    width: fit-content;
+    background-color: #d6d1d124;
+    cursor: pointer;
+}

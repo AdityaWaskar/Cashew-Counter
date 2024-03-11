@@ -1,0 +1,21 @@
+:is(#removeWorkerContainer, #allWorkerContainer, #addCashewContainer) .subContainer{
+    width: 80%; 
+}
+
+:is(#removeWorkerContainer, #allWorkerContainer, #addCashewContainer) .searchField{
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px grey;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+ 
+:is(#removeWorkerContainer, #allWorkerContainer, #addCashewContainer) input{
+    width: 100%;
+    border: none;
+    font-size: 1.1rem;
+}

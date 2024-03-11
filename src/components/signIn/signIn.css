@@ -1,0 +1,75 @@
+#signInContainer{
+    background-color: #013243;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+#signInContainer .mainContainer{
+    margin: 0 auto;
+    background-color: #ffffffe0;
+    width: 21%;
+    border-radius: 8px;
+    padding: 20px ;
+}
+
+#signInContainer .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#signInContainer img{
+    width: 100px;
+    height: 100px;
+}
+
+#signInContainer .bottom{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; 
+    padding-bottom: 0;
+}
+ 
+#signInContainer input:first-child{
+    margin-top: 30px;
+}
+
+#signInContainer input{
+    margin-bottom: 25px;
+    background-color: #80808024;
+}
+
+#signInContainer .mainContainer :is(button, input){
+    width: 100%;
+    border: 1px solid #001d27;
+    color: black;
+}
+
+#signInContainer ::placeholder{
+    color: #2f2f2fd6;
+}
+
+#signInContainer .lgBtn{
+    background-color: #59C872;
+    border: 1px solid #59C872; 
+    font-size: 1.1rem; 
+    margin-top: 15px;
+    font-weight: bold;
+    color: black;
+} 
+
+#signInContainer .mainContainer .fgBtn{
+    background-color: transparent;
+    border: none;
+    padding-top: 0;
+    color: #59C872;
+}

@@ -1,0 +1,103 @@
+.workerTable img{
+    /* width: 40px; */
+    width: 100%;
+    /* height: 40px; */
+    opacity: .7; 
+}
+
+.workerTable{
+    margin: 0 auto;
+    width: 80%;  
+    text-align: center;
+    max-height: 60vh; 
+}
+
+.workerTable .tbody{
+    max-height: 60vh;
+    overflow-y: auto; 
+
+}
+
+::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #a3a3a3;
+}
+ 
+.workerTable>.tr:first-child{
+    border: none;
+}
+
+.workerTable .tr{ 
+    display: flex; 
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid black; 
+}
+
+
+.workerTable .td{
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 5px;
+    color: #494949;
+    flex: 1;
+}
+ 
+
+.workerTable .tr:hover :is(img, .td){
+    transition: all .3s ease;
+    opacity: 1;
+    color: black;
+    cursor: pointer;
+}
+
+.workerTable .removeBtn svg:hover{
+    color: red;
+    transition: all .4s ease;
+    transform: scale(1.2);
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    cursor: pointer;
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+        transform: translate3d(-3px, 0, 0);
+    }
+    
+    40%, 60% {
+        transform: translate3d(3px, 0, 0);
+    }
+}
+
+.workerTable .th{
+    width: 100%;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none; 
+}
+ 
+.workerTable .td:nth-child(2){
+    flex: 2;
+    text-align: start;
+    padding-left: 5px;
+}
+
+.workerTable .td:first-child{ 
+    flex: 0.3;
+}
+ 

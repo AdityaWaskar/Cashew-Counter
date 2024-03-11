@@ -1,0 +1,12 @@
+._mainContainer{
+    display: flex;
+}
+
+._mainContainer :is(#addWorkerContainer, #removeWorkerContainer ,#allWorkerContainer, #dashboardContainer, #addCashewContainer){
+    /* background-color: rgb(219, 180, 180);  */
+    width: calc(100vw - 300px);
+}
+ 
+._mainContainer > #loadingContainer{
+    width: 100%;
+}

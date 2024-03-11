@@ -1,0 +1,36 @@
+#allWorkerContainer .filters{
+    margin-left: 100px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#allWorkerContainer .filters span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    width: fit-content;
+    border: 1px solid grey;
+    border-radius: 6px;
+    padding: 5px 12px;
+    margin-right: 5px;
+}
+
+#allWorkerContainer .filters span:hover{
+    cursor: pointer;
+    background-color: #e093eca8;
+    /* color: white; */
+    transition: all .4s ease;
+} 
+
+#allWorkerContainer .cashewIndi div{
+    display: inline;
+}
+
+#allWorkerContainer .cashewIndi .logo{
+    transform: rotate(180deg);
+}
+
+#allWorkerContainer .filters .active{
+    background-color: #e093eca8;
+}
