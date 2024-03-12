@@ -1,6 +1,7 @@
 import React from "react";
 import "./workerTable.css";
 import { MdDelete } from "react-icons/md";
+import profile from "../../assets/profile.png";
 
 const WorkerTable = ({ _removeWorker, remove, workerTable }) => {
   return (
@@ -18,7 +19,7 @@ const WorkerTable = ({ _removeWorker, remove, workerTable }) => {
           Object.values(workerTable).map((w, index) => (
             <div className="tr" key={w.phoneNo + index}>
               <div className="td">
-                <img src="src/assets/profile.png" alt="" />
+                <img src={profile} alt="" />
               </div>
               <div className="td">{w.name}</div>
               <div className="td">{w.gender}</div>
