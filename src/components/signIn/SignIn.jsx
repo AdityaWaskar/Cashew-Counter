@@ -10,6 +10,7 @@ import Toaster from "../tosterFunctions/toaster";
 import "./signIn.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import logo from "../../assets/logo.png";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -86,7 +87,7 @@ const SignIn = () => {
       <Loading isLoading={isLoading} />
       <div className="mainContainer">
         <div className="top">
-          <img src="./src/assets/logo.png " alt="" />
+          <img src={logo} alt="" />
           <h3>Sign In</h3>
           <div className="SubText1">
             Sign in and start managing your candidates

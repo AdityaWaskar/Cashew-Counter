@@ -13,6 +13,7 @@ import {
 import { ToastContainer } from "react-toastify";
 import Toaster from "../tosterFunctions/toaster";
 import Loading from "../loading/Loading";
+import profile from "../../assets/profile.png";
 
 const months = [
   "January",
@@ -168,7 +169,7 @@ const AddCashew = () => {
             {Object.values(workers).map((worker, index) => (
               <div className="tr" key={worker?.phoneNo + index}>
                 <div className="td">
-                  <img src="src/assets/profile.png" alt="" />
+                  <img src={profile} alt="" />
                 </div>
                 <div className="td">{worker?.name}</div>
                 <div className="td">{worker?.gender}</div>

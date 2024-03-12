@@ -8,6 +8,7 @@ import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import { addCashew } from "../../store/workerSlice";
 import { print } from "../../utils/common";
+import profile from "../../assets/profile.png";
 
 const Profile = ({ workerInfo, range }) => {
   return (
@@ -50,10 +51,10 @@ const WorkerTable = ({
 }) => {
   const setIndividualWorkerInfo = (workerinfo, rangeValue) => {
     let d = { ...workerinfo };
-    d[dateRange] = rangeValue; 
+    d[dateRange] = rangeValue;
     setWorkerInfo(d);
   };
-  print(workerTable); 
+  print(workerTable);
   return (
     <div className="wTable">
       <div className="tr th">
@@ -93,7 +94,7 @@ const WorkerTable = ({
               }
             >
               <div className="td">
-                <img src="src/assets/profile.png" alt="Profile" />
+                <img src={profile} alt="Profile" />
               </div>
               <div className="td">{workerList[key]["name"]}</div>
               <div className="td">{workerTable[key]}</div>
@@ -197,7 +198,7 @@ const Dashboard = () => {
         year <= endDate.getFullYear();
         year++
       ) {
-        // Loop for iterate over the months 
+        // Loop for iterate over the months
         for (
           let month = startDate.getMonth();
           month <= endDate.getMonth();

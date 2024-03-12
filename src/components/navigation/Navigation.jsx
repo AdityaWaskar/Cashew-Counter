@@ -11,6 +11,7 @@ import "../../index.css";
 import { signOut } from "firebase/auth";
 import { auth } from "../../../firebase.config";
 import { useNavigate } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const data = [
   {
@@ -60,7 +61,7 @@ const Navigation = (props) => {
   return (
     <nav>
       <div className="top flex">
-        <img src="src/assets/logo.png" alt="" />
+        <img src={logo} alt="" />
       </div>
       <div className="middle">
         <ul>
